@@ -1,0 +1,99 @@
+/* Mulish   Philosopher 
+
+font-family: "Mulish", system-ui;*/
+
+body{
+    background-color: #41295a;
+}
+
+.wrapper{
+    background-color: #fff;
+    width: 700px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.9);
+
+}
+
+.heading{
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-family: "Philosopher", sans-serif;
+}
+
+.heading::after{
+    content: '';
+    width: 280px;
+    height: 3px;
+    background-color: #41295a;
+    border-radius: 3px;
+    position: absolute;
+    top: 120px;
+    left:50% ;
+    transform: translate(-50%);
+}
+
+blockquote{
+    font-size: 26px;
+    min-height: 60px;
+    font-family: "Mulish", system-ui;
+    margin: 25px 0;
+}
+
+blockquote::before,blockquote::after{
+    content: '"';
+}
+
+.author{
+    display:  block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+    font-family: "Philosopher", sans-serif;
+    font-weight: bold;
+}
+
+.author::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    background: #41295a;
+    transform: translate(-50%);
+    top: 50%;
+    left:-20px;
+}
+
+
+.buttons{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.buttons button{
+    background-color: #41295a;
+    color: #fff;
+    border-radius: 10px;
+    width: 125px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    font-family: "Philosopher", sans-serif;
+
+}
+
+.buttons button i
+{
+    margin-right:10px ;
+    font-size: 20px;
+}
